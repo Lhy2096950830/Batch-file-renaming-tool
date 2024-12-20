@@ -1,5 +1,73 @@
-# Welcome to GitHub Desktop!
+# 批量文件重命名工具
 
-This is your README. READMEs are where you can communicate what your project is and how to use it.
 
-Write your name on line 6, save it, and then head back to GitHub Desktop.
+---
+
+
+## 简介
+
+本项目是一个基于 Python 和 Tkinter 的 GUI 工具，用于批量重命名文件。它提供了灵活的文件命名规则配置功能，包括学号提取、文本替换、字符插入与移除等操作，并支持子目录处理和日志记录功能。
+
+## 功能特性
+
+- **支持学号和姓名提取**：从文件名中提取学号和姓名，并重命名文件。
+- **批量替换规则**：配置自定义的字符串替换规则。
+- **文本插入与移除**：在指定位置插入文本或移除指定字符。
+- **保留特定字符**：移除文件名中除指定字符外的所有字符。
+- **日志记录**：记录重命名操作到日志文件。
+- **子目录处理**：可选择是否处理子目录中的文件。
+- **预览功能**：在实际操作前预览重命名结果。
+
+## 使用方法
+
+### 环境要求
+
+- Python 3.6 或更高版本
+- Tkinter（Python 标准库中的 GUI 模块）
+
+### 安装依赖
+
+无需额外依赖，Tkinter 是 Python 的内置模块。
+
+### 运行程序
+
+1. 克隆本项目：
+   ```bash
+   git clone https://github.com/your-repo-name/batch-renaming-tool.git
+   cd batch-renaming-tool
+   ```
+2. 运行脚本：
+   ```bash
+   python Batch_file_renaming_tool.py
+   ```
+
+### 操作步骤
+
+1. **选择文件夹**：点击“浏览”按钮，选择需要重命名的文件夹。
+2. **配置选项**：
+   - 是否包含子目录。
+   - 是否记录重命名日志。
+   - 配置替换规则、插入文本、移除或保留特定字符。
+3. **预览文件名**：点击“预览”按钮，查看重命名后的效果。
+4. **开始重命名**：确认无误后，点击“开始重命名”按钮。
+
+### 界面截图
+
+（在此添加应用界面的截图）
+
+## 日志记录
+
+重命名日志将保存为 `rename_log.txt`，存放在选定的文件夹中，记录格式如下：
+```
+2024-12-20 12:34:56 - old_filename.txt -> new_filename.txt
+```
+
+## 贡献
+
+欢迎提交问题和功能建议！如需贡献代码，请先 fork 本项目并创建一个分支。
+
+## 许可证
+
+本项目基于 MIT 许可证开源。
+
+---
